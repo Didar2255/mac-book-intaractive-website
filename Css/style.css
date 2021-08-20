@@ -15,3 +15,9 @@
 .discription{
     margin: 70px;
 }
+.total-cost{
+    display: flex;
+}
+.price{
+    margin-left: 60px;
+}
