@@ -1,19 +1,24 @@
-.container{
-    height: 500px;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
 }
 .mac-img img{
     height: 400px;
     margin: 60px;
     
 }
-
 .About{
     display: flex;
     justify-content: space-evenly;
 }
 .discription{
-    margin: 70px;
+    margin: 30px;
+}
+.product-color{
+    color: tomato;
+}
+.text-item{
+    font-size: 40px;
 }
 .total-cost{
     display: flex;
