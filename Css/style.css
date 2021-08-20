@@ -1,0 +1,17 @@
+.container{
+    height: 500px;
+    width: 100%;
+}
+.mac-img img{
+    height: 400px;
+    margin: 60px;
+    
+}
+
+.About{
+    display: flex;
+    justify-content: space-evenly;
+}
+.discription{
+    margin: 70px;
+}
