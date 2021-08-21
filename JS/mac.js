@@ -79,7 +79,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const totalPrice = document.getElementById('total-amount');
     const totalPriceAmount = parseInt(totalPrice.innerText);
     if (CuponInput == 'stevekaku') {
-        const offerAmount = (totalPriceAmount / 100) * 20;
+        const offerAmount = (totalPriceAmount * 20) / 100;
         document.getElementById('total-purchase').innerText = totalPriceAmount - offerAmount;
     }
 
