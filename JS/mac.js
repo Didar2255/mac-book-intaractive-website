@@ -1,4 +1,3 @@
-
 // MemoryPriceIncrease Function
 function memoryPriceIncrease(initialPrice) {
     const memory = document.getElementById('memory-cost');
@@ -11,9 +10,13 @@ function memoryPriceIncrease(initialPrice) {
     totalPurches.innerText = totalPrice.innerText;
 };
 
+// 8gb memory add event hendle
+
 document.getElementById('8gb-btn').addEventListener('click', function () {
     memoryPriceIncrease(0);
 });
+
+// 16gb memory add event hendle
 document.getElementById('16gb-btn').addEventListener('click', function () {
     memoryPriceIncrease(180);
 });
@@ -28,17 +31,23 @@ function storagePriceIncrease(initialPrice) {
     const totalPurches = document.getElementById('total-purches');
     totalPurches.innerText = totalPrice.innerText;
 }
+// 256 gb storage add event hendeler
+
 document.getElementById('256bg-stor-btn').addEventListener('click', function () {
     storagePriceIncrease(0)
 });
+// 512 gb storage add event hendeler
 document.getElementById('512bg-stor-btn').addEventListener('click', function () {
     storagePriceIncrease(100)
-})
+});
+// 1tb storage add event hendeler
+
 document.getElementById('1tb-stor-btn').addEventListener('click', function () {
     storagePriceIncrease(180)
-})
+});
 
-// DeliveryCost Function
+// DeliveryCost use function
+
 function deliveryPriceIncrease(initialPrice) {
     const delivaryCost = document.getElementById('delivery-cost');
     delivaryCost.innerText = initialPrice;
@@ -49,10 +58,13 @@ function deliveryPriceIncrease(initialPrice) {
     totalPrice.innerText = parseInt(delivaryCost.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(fixed.innerText);
     const totalPurches = document.getElementById('total-purches');
     totalPurches.innerText = totalPrice.innerText;
-}
+};
+// delivaryCost 0 discount
 document.getElementById('delivery-btn1').addEventListener('click', function () {
     deliveryPriceIncrease(0);
 });
+
+// delivaryCost 20 discount
 document.getElementById('delivery-btn2').addEventListener('click', function () {
     deliveryPriceIncrease(20);
 });
