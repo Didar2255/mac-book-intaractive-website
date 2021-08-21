@@ -3,10 +3,11 @@
 document.getElementById('8gb-btn').addEventListener('click', function () {
     const memory = document.getElementById('memory-cost');
     memory.innerText = '0';
+    const storage = document.getElementById('storage-cost')
     const fixed = document.getElementById('fixed-price');
     const fixedNumber = parseInt(fixed.innerText)
     const totalPrice = document.getElementById('total-amount');
-    totalPrice.innerText = fixedNumber + parseInt(memory.innerText);
+    totalPrice.innerText = fixedNumber + parseInt(memory.innerText) + parseInt(storage.innerText);
     const totalPurches = document.getElementById('total-purches');
     totalPurches.innerText = totalPrice.innerText;
 
@@ -14,10 +15,11 @@ document.getElementById('8gb-btn').addEventListener('click', function () {
 document.getElementById('16gb-btn').addEventListener('click', function () {
     const memory = document.getElementById('memory-cost');
     memory.innerText = '180';
+    const storage = document.getElementById('storage-cost')
     const fixed = document.getElementById('fixed-price');
     const fixedNumber = parseInt(fixed.innerText)
     const totalPrice = document.getElementById('total-amount');
-    totalPrice.innerText = fixedNumber + parseInt(memory.innerText);
+    totalPrice.innerText = fixedNumber + parseInt(memory.innerText) + parseInt(storage.innerText);
     const totalPurches = document.getElementById('total-purches');
     totalPurches.innerText = totalPrice.innerText;
 

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(233, 192, 188, 0.576);
 }
 .mac-img img{
     height: 400px;
-    margin: 60px;
-    
+    margin: 60px;  
 }
 .About{
     display: flex;
@@ -25,4 +25,22 @@ body{
 }
 .price{
     margin-left: 60px;
+}
+.total-new{
+    display: flex;
+}
+.price-new
+{
+    margin-left:100px ;
+}
+.line-style{
+    width: 30%;
+    margin-left: 0px;
+     border: 1px solid black; 
+}
+.appay-button{
+    background-color: blue;
+    color: wheat;
+    padding: 2px;
+    
 }
