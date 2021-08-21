@@ -4,10 +4,11 @@ function memoryPriceIncrease(initialPrice) {
     memory.innerText = initialPrice;
     const storage = document.getElementById('storage-cost')
     const fixed = document.getElementById('fixed-price');
+    const deliveryCost = document.getElementById('delivery-cost');
     const totalPrice = document.getElementById('total-amount');
-    totalPrice.innerText = parseInt(fixed.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText);
-    const totalPurches = document.getElementById('total-purches');
-    totalPurches.innerText = totalPrice.innerText;
+    totalPrice.innerText = parseInt(fixed.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(deliveryCost.innerText);
+    const totalpurchase = document.getElementById('total-purchase');
+    totalpurchase.innerText = totalPrice.innerText;
 };
 
 // 8gb memory add event hendle
@@ -26,10 +27,11 @@ function storagePriceIncrease(initialPrice) {
     storage.innerText = initialPrice;
     const memory = document.getElementById('memory-cost');
     const fixed = document.getElementById('fixed-price');
+    const delivaryCost = document.getElementById('delivery-cost')
     const totalPrice = document.getElementById('total-amount');
-    totalPrice.innerText = parseInt(storage.innerText) + parseInt(memory.innerText) + parseInt(fixed.innerText);
-    const totalPurches = document.getElementById('total-purches');
-    totalPurches.innerText = totalPrice.innerText;
+    totalPrice.innerText = parseInt(storage.innerText) + parseInt(memory.innerText) + parseInt(fixed.innerText) + parseInt(delivaryCost.innerText);
+    const totalpurchase = document.getElementById('total-purchase');
+    totalpurchase.innerText = totalPrice.innerText;
 }
 // 256 gb storage add event hendeler
 
@@ -52,12 +54,12 @@ function deliveryPriceIncrease(initialPrice) {
     const delivaryCost = document.getElementById('delivery-cost');
     delivaryCost.innerText = initialPrice;
     const memory = document.getElementById('memory-cost');
-    const storage = document.getElementById('storage-cost')
+    const storage = document.getElementById('storage-cost');
     const fixed = document.getElementById('fixed-price');
     const totalPrice = document.getElementById('total-amount');
-    totalPrice.innerText = parseInt(delivaryCost.innerText) + parseInt(memory.innerText) + parseInt(storage.innerText) + parseInt(fixed.innerText);
-    const totalPurches = document.getElementById('total-purches');
-    totalPurches.innerText = totalPrice.innerText;
+    totalPrice.innerText = parseInt(delivaryCost.innerText) + parseInt(storage.innerText) + parseInt(memory.innerText) + parseInt(fixed.innerText);
+    const totalpurchase = document.getElementById('total-purchase');
+    totalpurchase.innerText = totalPrice.innerText;
 };
 // delivaryCost 0 discount
 document.getElementById('delivery-btn1').addEventListener('click', function () {
@@ -78,7 +80,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const totalPriceAmount = parseInt(totalPrice.innerText);
     if (CuponInput == 'stevekaku') {
         const offerAmount = (totalPriceAmount / 100) * 20;
-        document.getElementById('total-purches').innerText = totalPriceAmount - offerAmount;
+        document.getElementById('total-purchase').innerText = totalPriceAmount - offerAmount;
     }
 
 })
