@@ -29,7 +29,7 @@ body{
 .total-new{
     display: flex;
 }
-.price-new
+.new-price
 {
     margin-left:100px ;
 }
@@ -42,5 +42,5 @@ body{
     background-color: blue;
     color: wheat;
     padding: 2px;
-    
+    font-weight: 40px;   
 }
