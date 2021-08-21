@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* common style */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: rgba(113, 153, 149, 0.576);
 }
+/* computer image style */
 .mac-img img{
     height: 400px;
     margin: 60px;  
 }
+/* computer details style */
 .About{
     display: flex;
     justify-content: space-evenly;
@@ -20,6 +23,8 @@ body{
 .text-item{
     font-size: 40px;
 }
+
+/* total amount style */
 .total-cost{
     display: flex;
 }
@@ -33,11 +38,15 @@ body{
 {
     margin-left:100px ;
 }
+/* hr style */
+
 .line-style{
     width: 30%;
     margin-left: 0px;
      border: 1px solid black; 
 }
+
+/* cupon button style */
 .appay-button{
     background-color: blue;
     color: wheat;
